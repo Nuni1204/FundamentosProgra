@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+body:before {
+  content: "";
+  background: linear-gradient(to bottom, #1768ff, #679cff);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; 
+}
+
+.container {
+  background-color: #bed5ff;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  position: relative; 
+  z-index: 1; 
+}
+
+.container-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label, input {
+  display: block;
+  height: 18px;
+  border-color: white;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #0059ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: #3c80ff;
+}
+
+.boton-regresar {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0059ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-regresar:hover {
+  background-color: #3c80ff;
+}
+
+@media (max-width: 768px) {
+  .boton-regresar {
+      font-size: 14px;
+      padding: 8px 16px;
+      bottom: 10px;
+      right: 10px;
+  }
+}
+
+

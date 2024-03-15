@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+form, table {
+    display: block;
+    margin: 0 auto;
+}
+
+label, select, input, button {
+    display: block;
+    margin-bottom: 20px;
+    width: calc(100% - 20px);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+select, input {
+    width: calc(100% - 30px);
+}
+
+button {
+    background-color: #0059ff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3c80ff;
+}
+
+#invoice-summary {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#invoice-summary div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#invoice-table {
+    width: 100%;
+}
+
+#invoice-table thead {
+    background-color: #0059ff;
+    color: #fff;
+}
+
+#invoice-table th, #invoice-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#invoice-table th:first-child, #invoice-table td:first-child {
+    text-align: left;
+}
+
+#invoice-summary span {
+    color: #333;
+    font-weight: bold;
+}
+
+.boton-regresar {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0059ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-regresar:hover {
+    background-color: #3c80ff;
+}
+
+@media (max-width: 768px) {
+    .boton-regresar {
+        font-size: 16px;
+        padding: 12px 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

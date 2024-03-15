@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reto5.css">
+    <title>Reto #5</title>
+</head>
+<body>
+    <div class="container">
+        <img src="img/nissan-logo.png" alt="Logo de la calculadora" class="logo">
+        <h1>Calculadora de Compra Nissan</h1>
+        <form id="calculator-form">
+            <div class="select-container">
+                <label for="model">Modelo:</label>
+                <select id="model" name="model">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="frontier">Nissan Frontier</option>
+                    <option value="qashqai">Nissan Qashqai</option>
+                </select>
+            </div>
+
+            <div class="select-container">
+                <label for="version">Version:</label>
+                <select id="version" name="version">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="manual">Manual</option>
+                    <option value="automatico">Automático</option>
+                </select>
+            </div>
+
+            <button type="button" id="calculate-button">Calcular</button>
+        </form>
+
+        <div class="vehicle-info">
+            <img src="" alt="Imagen del Vehículo" id="vehicle-image">
+            <p>Precio: <span id="vehicle-price">0</span> millones de colones</p>
+        </div>
+    </div>
+
+    <a class="boton-regresar" href="index.html">Regresar</a>
+    <script src="js/reto5.js"></script>
+</body>
+</html>

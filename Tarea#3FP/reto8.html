@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Promedio Estudiantil</title>
+  <link rel="stylesheet" href="css/reto8.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Promedio Estudiantil</h1>
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+    </div>
+    <div>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" required>
+    </div>
+    <div>
+      <label for="periodo1">Nota Primer Periodo:</label>
+      <input type="number" id="periodo1" min="0" max="100" required>
+    </div>
+    <div>
+      <label for="periodo2">Nota Segundo Periodo:</label>
+      <input type="number" id="periodo2" min="0" max="100" required>
+    </div>
+    <div>
+      <label for="periodo3">Nota Tercer Periodo:</label>
+      <input type="number" id="periodo3" min="0" max="100" required>
+    </div>
+    <button id="agregar">Agregar</button>
+    <div>
+      <label for="estudiantes">Seleccionar Estudiante:</label>
+      <select id="estudiantes"></select>
+    </div>
+    <button id="calcularPromedio">Calcular Promedio</button>
+    <div id="resultado"></div>
+    <button id="limpiar">Limpiar</button>
+
+  </div>
+
+  <a class="boton-regresar" href="index.html">Regresar</a>
+  <script src="js/reto8.js"></script>
+</body>
+</html>

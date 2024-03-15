@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demostración de Controles Dinámicos</title>
+  <link rel="stylesheet" href="css/reto9.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Demostración de Controles Dinámicos</h1>
+    <form id="demoForm">
+      <p>
+        <label>
+          <input type="radio" name="demoRadio" value="opcion1" checked> Opción 1
+        </label>
+        <label>
+          <input type="radio" name="demoRadio" value="opcion2"> Opción 2
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="demoCheckbox" value="checkbox1"> Checkbox 1
+        </label>
+        <label>
+          <input type="checkbox" name="demoCheckbox" value="checkbox2"> Checkbox 2
+        </label>
+      </p>
+    </form>
+    <button onclick="showResult()">Mostrar Resultado</button>
+    <div id="result"></div>
+  </div>
+
+  <a class="boton-regresar" href="index.html">Regresar</a>
+  <script src="js/reto9.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reto2.css">
+    <title>Reto #2</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Factura Digital</h1>
+        <form id="invoice-form">
+            <label for="name">Nombre del Cliente:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="item">Articulo Comprado:</label>
+            <select id="item" name="item" required>
+                <option value="Impresora">Impresora</option>
+                <option value="Computadora">Computadora</option>
+                <option value="Monitor">Monitor</option>
+            </select>
+
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <button type="button" id="add-item">Agregar a la Factura</button>
+        </form>
+
+        <h2>Detalle de la Factura</h2>
+        <table id="invoice-table">
+            <thead>
+                <tr>
+                    <th>Articulo</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="invoice-summary">
+            <div>
+                <span>Subtotal:</span>
+                <span id="subtotal">0</span> colones
+            </div>
+            <div>
+                <span>IVA 13%:</span>
+                <span id="iva">0</span> colones
+            </div>
+            <div>
+                <span>Servicio 5%:</span>
+                <span id="servicio">0</span> colones
+            </div>
+            <div>
+                <span>Total a Pagar:</span>
+                <span id="total">0</span> colones
+            </div>
+        </div>
+    </div>
+
+    <a class="boton-regresar" href="index.html">Regresar</a>
+    <script src="js/reto2.js"></script>
+</body>
+</html>
+
